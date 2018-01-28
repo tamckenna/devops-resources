@@ -14,7 +14,7 @@
   * [.NET Core](https://www.microsoft.com/net/learn/get-started) - _Cross-Platform .NET framework_
   * [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) - _Java Development Kit_
   * [NodeJS](https://nodejs.org/en/) - _Javascript Runtime Environment_
-  * [Docker](https://store.docker.com/search?offering=community&q=&type=edition) and [Docker-Compose](https://docs.docker.com/compose/install/) - _Container Platform_
+  * [Docker](https://store.docker.com/search?offering=community&q=&type=edition) & [Docker-Compose](https://docs.docker.com/compose/install/) - _Container Platform_
   * **CLI**
     * [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)
     * [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
@@ -24,7 +24,7 @@
   
 
 ### My Notes
- * [Git Notes](git)
+ * [Git](git)
 
 ### Training Sites
  * [Cloud Academy](https://cloudacademy.com/)
