@@ -1,7 +1,9 @@
 ## DevOps Resources & Notes
 
 ### Notes
- * [Git](git)
+ * [Git](git) - _Basic git training notes_
+ * [Selfhosted List](https://github.com/Kickball/awesome-selfhosted) - _List of Free & Open Software alternatives_
+ 
 
 ### Infrastructure as Code (IAC)
  * [IaC Tutorials](https://github.com/Artemmkin/infrastructure-as-code-tutorial) by [Artemmkin](https://github.com/Artemmkin)
