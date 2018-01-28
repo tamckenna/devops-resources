@@ -1,4 +1,4 @@
-## DevOps Resources
+## DevOps Resources & Notes
 
 ### General
 - [Git Notes](git)
