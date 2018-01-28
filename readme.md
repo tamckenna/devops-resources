@@ -1,5 +1,10 @@
 ## DevOps Resources & Notes
 
+### Tools/Utilities
+  - [VS Code](https://code.visualstudio.com/)
+  - [Sql Ops Studio](https://docs.microsoft.com/en-us/sql/sql-operations-studio/download)
+    - [Github Page](https://github.com/Microsoft/sqlopsstudio)
+
 ### General
 - [Git Notes](git)
 
