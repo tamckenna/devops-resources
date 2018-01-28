@@ -1,0 +1,72 @@
+History and Configuration
+
+
+#viewing the logs
+git log
+
+#enable git log colors
+git config --global color.ui true
+
+git log --pretty=oneline
+
+git log --pretty=format:"%h %ad- %s [%an]"
+    %ad     author date
+    %an     author name
+    %h      SHA hash
+    %s      subject
+    %d      ref names
+
+git log --oneline -p
+    #show patch details (actual code changes made with commit)
+
+git log --oneline --stat
+    #details number of insertions and deletes
+git log --oneline --graph
+
+
+#date ranges
+    git log --until=1.minute.ago
+    git log --since=1.day.ago
+    git log --since=1.hour.ago
+    git log --since=1.month.ago --until=2.weeks.ago
+    git log --since=2000-01-01 --until=2012-12-21
+
+
+git diff
+    #exactly same as git diff HEAD
+
+
+git diff HEAD^      #previous commit
+git diff HEAD^^     #2 commits ago
+git diff HEAD~5     #five commits ago
+git diff HEAD^..HEAD    #second most recent commmit vs most recent
+
+
+Blame
+git blame index.html --date short
+
+.git/info/exclude file
+    experiments/
+        #will hide the experiments directory from the git repo
+        #exlude specific files or use wildcards
+
+vim .gitignore
+    logs/*.log
+git add .gitignore
+git commit -m "Adding .gitignore file"
+git push -u origin
+
+git rm README.txt
+git commit -m "Remove README.txt"
+git push -u origin
+
+git rm --cached development.log #stop tracking your log files
+
+git config --global user.name "Taylor McKenna"
+git config --global user.email "tmckenna@mem-ins.com"
+git config --global core.editor emacs       #or use nano or vim
+git config --global merge.tool opendiff
+
+git config --list
+
+ALIASES

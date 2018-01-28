@@ -1,0 +1,45 @@
+Working Together
+
+#Line Endings
+    #UNIX/MACOS X
+        git config --global core.autocrlf input #Fixes any windows line endings that were introduced
+    #Windows
+        git config --global core.autocrlf true
+
+#Git Attributes File
+    *
+    *.html  *.jpeg
+    text=auto
+    text
+    text eol=crlf
+    text eol=lf
+    binary
+
+    #Example
+        * text=auto
+        *.html  text
+        *.css   text
+
+        *.jpeg  binary
+        *.png   binary
+
+        *.sh    text    eol=lf
+        *.bat   text    eol=crlf
+
+#Cherry Pick Commits into production from development
+    git checkout production
+    git cherry-pick <hash>
+        #git cherry-pick 53212e5
+
+    #change commit message
+        git cherry-pick --edit <hash>
+
+    git cherry-pick --no-commit <hash1> <hash2>
+        #stages changes but doesn't commit them
+    git commit -m "Add Clownfish and sharks (in separate tanks)."
+
+    git cherry-pick -x <hash>
+        #includes cherry-pick details into commit message
+    
+    git cherry-pick --signoff <hash>
+        #logs who did the cherry picking; not just who commited the changes in the development environment

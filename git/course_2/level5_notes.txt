@@ -1,0 +1,46 @@
+Submodules
+    #Sharing Libraries
+
+#a git repor inside a git repo
+
+#add submodule git repo to current git repo
+    git submodule add git@example.com:css.git
+
+#creates
+    .gitmodules     #config for Submodules
+    css/            #new directory/Submodule itself
+
+#Modifying Submodule Code
+    cd css/
+    git checkout master #checkout submodule branch
+    #make changes
+    git status
+    git commit -am "update menu font."  #commit to submodule master branch
+    git push    #push to submodule origin repo branch
+
+    cd ..   #go back to main git repo
+    git status
+    git add css #add changes to css submodule 
+    git commit -m "update menu font in css/"    #commit
+    git push    #push
+
+#Cloning Projects
+    git clone git@example.com:aquarium.git
+        #creates .gitmodules clownfish.html guppy.html index.html css/ js/
+            #both css/ & js/ are empty directories
+    git submodule init #Submodule init
+    git submodule update    #pulls down repo code files
+
+
+#Make changes to CSS Submodule
+    cd css
+    git status
+    git checkout master
+    git add example.css
+    git commit -m "update menu font"
+
+#Pushing submodules DON'T FORGET!
+    git push --recurse-submodules=check #checks to make sure submodules were pushed. Will abort if not
+    git push --recurse-submodules=on-demand #will automatically push for the submodule if parent is being pushed
+        #make this a git alias
+        git config alias.pushall "push --recurse-submodules=on-demand"

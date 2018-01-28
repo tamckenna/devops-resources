@@ -1,0 +1,137 @@
+2 Single Repository Workflows
+
+#Used more in a corporate development setting
+#single source of truth for source code
+#Feature Branch strategy for Individual development
+
+git fetch
+git branch-a
+git checkout f2
+
+#Pull Requests for Reviewing Work
+git checkout -b feature_branch
+
+#Submitting a Pull Request from a feature branch
+git checkout -b kill_list
+vim kill_list.md
+git add .
+git commit -m "Initial Kill list"
+git push -u origin kill_list
+cat .git/config
+
+
+Create a branch of the "dojo_rules" repository locally and name it "deadly_skills". Push it up to GitHub. At this point, the branch will have the same content as the master branch.
+    git checkout -b deadly_skills
+    git push origin deadly_skills
+
+On your "deadly_skills" branch, open up your introduction file and modify it to include a list of your deadly skills (for example: Git, JavaScript, Ruby). Since this file is Markdown, you can specify these one per line starting the line with a * to make them into a list.
+Add, commit and push your changes up to GitHub. Be sure to push to the remote branch with the same name as your local branch – deadly_skills.
+    vim introduction.rb
+    git add .
+    git commit -m "Adding skill list to introduction page"
+    git push origin deadly_skills
+
+
+Create a pull request from your branch to your master. When you create a pull request by default it'll go from your master branch back to "deadlyvipers/dojo_rules". In this case though, we want the pull request to go from "dojo_rules/deadly_skills" to "dojo_rules/master" – both in your repository.
+To do this, create a pull request on GitHub. Make sure the base is your master and the "compare" is your "deadly_skills" branch. This should show all of the changes you made on your branch.
+
+2.3 Collaborating on Pull Requests
+
+#Pull Requests point to the HEAD of a branch not a specific commit on a branch
+
+#3 types of comments on Pull Requests
+    # on the Pull Request - "I think this is a great feature"
+    # on the commit - "I don't think I agree with your changes to this code"
+    # on a line - "I really don't think you should have deleted line 12"
+
+#Reviewing a Pull Request
+    git fetch
+    git branch -a #show all local & remote branches
+    git checkout <remote_branch_name> #will automatically create branch locally and check it out
+    <make edits>
+    git commit
+    git push
+
+2.6 Merging Pull Requests
+
+    #Using rebase to make linear history more readable for users
+    git checkout feature_branch
+    git rebase master
+
+    #Fast Forward vs Recursive Merges?
+        #fast Forward
+            git checkout master
+            git merge feature_branch
+        #Recursive
+            git checkout merge
+            git merge --no-ff feature_branch
+    
+    #Considerations when Merging Pull Requests
+        #Interactively rebase to simplify history?
+            #Only when it leaves enough context.
+        #Rebase to create a linear history?
+            #If your team is comfortable with it.
+        #Fast Forward or recursive merges?
+            #Recursive provides more clarity.
+
+    #Interactive Rebase to simplify 5 commits into 1 commit
+        git lg
+        git checkout action_plan
+        git lg
+        git rebase -i HEAD~5 #rebase last 5 commits
+        git push -f #Becuase we have changed the SHA-1 hash
+    
+    #Rebase from master branch commits that happened while we were doing our own thing 
+        #Including master branch commits before our commits on action_plan
+        git rebase master
+        git push -f #Becuase we have changed the SHA-1 hash
+
+    #Recursively Merge action_plan into master branch
+        git checkout master
+        git merge --no-ff action_plan
+        git push
+
+2.7 Closing Pull Requests by Merging
+
+Pull all the changes down from GitHub. Look at your git log and you’ll see the "new_rules" branch has been merged into master. After pulling it down, your "master" branch should be at the same state as the "master" branch on GitHub.
+Merge the "deadly_skills" branch into master and push the changes to GitHub. You'll need to be on the "master" branch when you run the merge command.
+After you push the "master" branch, you'll see that the pull request on the branch was closed.
+    git checkout master
+    git pull
+    git merge --no-ff deadly_skills
+    git push
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

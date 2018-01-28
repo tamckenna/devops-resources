@@ -1,0 +1,67 @@
+3 Tags
+
+#3 Different Types of Tags
+    #Lightweight - just a tag no message or tagger
+    #Signed - uses public key to prove identity of tagger
+    #Annotated - adds info on who tagged, when and why.
+
+git tag     #Lightweight
+git tag -s  #Signed
+git tag -a  #Annotated
+
+#Annotated Example
+    git tag -a v1.3.2 -m "Tag Message"
+
+#Push tagged commits up to Github
+    git push --tags
+
+#   V0.0.0
+    #V[MajorRelease].[MinorRelease].[PatchRelease]
+        #Major - Adding substantial changes that could break backwards compatibility
+        #Minor - Adding new user valued functionality
+        #Patch - Fixing bug issues
+
+#Tagging a commit
+    git lg
+    git checkout hash_code
+    git lg
+    git tag -a v1.1.0 "Tag description message"
+    git lg  #will show tag description on commit
+    git push --tags
+
+
+3.3 Release Branches
+    #Release Tags vs Release Branches
+
+    #3 Use Cases for Release Branches
+        #Manual QA
+        #Long Running Releases
+        #On demand hot fixes
+
+3.4 Creating a Release Branch
+    #Create branch release_branch_1.0 from v1.0.0 tag; Push to github
+        git checkout tags/v1.0.0 -b release_branch_1.0
+        git push origin release_branch_1.0
+    #Make Code changes
+        vim kill_list.md
+        git add .
+        git commit -m "Changed assassin names with bad coding practices in kill_list.md"
+        git push
+    #Tag the fixed commit as v1.0.1 and push it up to Github
+        git checkout 65c7733
+        git tag -a v1.0.1 -m "Tagging this Commit as 1.0.1"
+        git push --tags
+    #Merge the release branch into the master
+        git checkout master
+        git merge release_branch_1.0
+        git push origin master
+    #Delete release local & remote branch
+        git branch -d release_branch_1.0
+        git push origin :release_branch_1.0
+
+3.5 Releases in Github
+    #Including Features exclusive to the Github Platform
+
+    #Tag - create in Git or in Github
+    #Binaries - Upload without adding to repo
+    #Notes - more comprehensive release Notes

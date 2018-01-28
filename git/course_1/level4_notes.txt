@@ -1,0 +1,25 @@
+Collaboration Basics
+
+#Jane's work
+    git clone url
+    git status
+    git add -all
+    git commit -m "Add store and product models"
+    git push
+
+#Gregg's work
+    git add -all
+    git commit -m "Adding to README file"
+    git push #gets rejected because Jane's work is upated on the origin. Gregg's source is out of sync
+
+
+git pull
+git fetch
+git merge origin/master
+git push
+
+git commit -a
+
+
+
+

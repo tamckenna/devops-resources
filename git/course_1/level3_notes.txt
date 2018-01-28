@@ -1,0 +1,37 @@
+Cloning & Branching
+
+git clone https://github.com/codeschool/git-real.git
+    #adds origin remote pointed to url
+    #checks out initial local branch master
+
+git branch cat
+    #create branch off of master branch
+
+git checkout cat
+    #switching to cat timeline/branch
+
+#merge changes in cat to master branch
+    git checkout master
+    git merge cat
+
+#delete cat branch
+git branch -d cat
+
+#creates admin branch and then checks it out
+git checkout -b admin
+
+
+#fix bug on master branch
+    git checkout master
+    git branch  #check which branch your on
+    git pull    #get latest code
+    git add store.rb
+    git commit -m 'Fix store bug'
+    git add product.rb
+    git commit -m 'Fix product'
+    git push
+
+#merge conflict trying to merge admin & master
+    git checkout master
+    git merge admin
+    git branch -d admin

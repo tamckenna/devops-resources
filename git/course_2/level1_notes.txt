@@ -1,0 +1,21 @@
+Interactive Rebase
+
+#two branches: master unicorns
+
+git checkout unicorns
+git rebase master
+
+#Interactive rebase for the last 3 commits
+git rebase -i HEAD~3
+    #HEAD^^
+    #HEAD^
+    #HEAD
+
+    #pick commands
+    #reword commands
+    #edit commands
+
+SQUASH COMMITS
+
+git rebase -i HEAD~4
+    #squash commands

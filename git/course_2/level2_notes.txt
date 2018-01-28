@@ -1,0 +1,62 @@
+Stashing
+
+git stash save  #save files in temporary area; So you can git pull all files in branch
+    git diff
+    git status
+    git checkout master
+    git pull
+
+#resume where you left off on half finished files
+git stash apply
+
+#list out previous stashes
+git stash list
+    #WIP - Work In Progress
+    stash@{0} WIP on master 686b55d Add wolves
+    stash@{1} WIP on gerbils b2bdead Add dogs
+    stash@{2} WIP on gerbils b2bdead Add dogs
+
+#specify stash to apply
+git stash apply stash@{1}
+    #defult stash is @{0}
+
+#remove stash on top of stack
+git stash drop
+
+SHORTCUT            FULL COMMAND
+git stash           git stash save
+git stash apply     git stash apply stash@{0}
+git stash drop      git stash drop stash@{0}
+git stash pop       git stash apply && git stash drop   #applies stash then removes it from the list
+
+#If there is an error when you run 'git stash pop' it won't remove it from the stash list
+
+#Keep Index or STASH unstaged changes
+git stash save --keep-index
+    #Causes the staging are not to be stashed
+    #so every file that has been "git add file_name.txt" will not be stashed
+
+#Stashing Untracked files
+    #Include Untracked
+    git stash save --include-untracked
+
+#Stash List Options
+    git stash list --stat
+    #can use git log options here as well
+
+#Stash Show
+    git stash show
+    git stash show stash@{0}
+    git stash show stash@{1}
+    #include git log options
+
+#Stash Messages
+    git stash save "Add gerbils page, start index"
+    #like commit Message
+
+#What if branch holding stash is destroyed?
+    git stash branch gerbil-toys stash@{0}
+    git commit -am "Add gerbil toys"
+
+#Clear stashes
+    git stash clear

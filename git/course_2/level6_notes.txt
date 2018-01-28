@@ -1,0 +1,13 @@
+Reflog
+    #git keeps a second log that is only on the local repo side for deleted commit info
+
+git reflog
+
+#Deleted commits
+    git reset --hard 1e62107    #Restoring old commit or old deleted commits
+    git reset --hard HEAD@{1}   #Or reference by its HEAD index number
+
+#Deleted Branches
+    git log --walk-reflogs
+    git branch aviary 280e
+    git branch aviary HEAD@{1}

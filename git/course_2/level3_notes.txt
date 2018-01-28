@@ -1,0 +1,24 @@
+Purging History
+
+#Accidentally commiting your password file
+
+#Backup your repo
+    git clone petshop petshop-filter
+
+#Tree filter
+    git filter-branch --tree-filter <shell_command>
+        git filter-branch --tree-filter 'rm -f passwords.txt' -- --all  #all branches and removes it from each commit
+        git filter-branch --tree-filter 'rm -f passwords.txt' -- --HEAD #filter only current branch
+        git filter-branch --tree-filter 'find . -name "*.mp4" -exec rm {} \;'
+
+#Index filter
+    git filter-branch --index-filter <command> ...
+        #command must operate on staging area
+        git filter-branch --index-filter 'git rm --cached --ignore-unmatch passwords.txt'
+
+#Force Tree Filter Script
+    git filter-branch -f --tree-filter 'rm -f passwords.txt' -- --all
+
+#Prune Empty Commits
+    git filter-branch -f --prune-empty -- --all
+    git filter-branch --tree-filter 'rm -f passwords.txt' --prune-empty -- --all #Can include in original Tree Filter git command

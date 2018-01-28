@@ -1,0 +1,34 @@
+git reset HEAD LICENSE
+
+git status
+
+
+git checkout -- LICENSE
+
+git reset --soft HEAD^
+
+
+git commit --amend -m "Modify readme & add todo.txt"
+
+
+
+
+git reset --soft HEAD^ #Undo last commit, put changes into staging
+git commit --amend -m "New Message" #Change the last commit
+git reset --hard HEAD^ #Undo last commit and all changes
+git reset --hard HEAD^^ #Undo last 2 commits and all changes
+
+git remote add <name> <address> # add new remotes
+git remote rm <name> #Remove specific remotes
+git push -u <name> <branch> #push to remotes
+
+git remote add origin https://github.com/Gregg/git-real.git
+git remote -v
+
+git push -u origin master
+
+git pull
+
+
+
+

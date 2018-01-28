@@ -1,0 +1,43 @@
+1 Fork Based Workflows
+
+#Git Levels of Configuration
+    --local
+    --global
+    --system
+
+git config --global user.name "Taylor Mckenna"
+git config --global user.email "tamr43@gmail.com"
+sudo git config --system color.ui true
+
+git config --global user.name   #output current user.name
+git config --global --list
+
+#Configuring Line Endings
+    sudo git config --system core.autocrlf input
+
+#Configuring Push Default
+    git config --global push.default simple
+
+#Configuring Pull Default
+    git config --global pull.rebase true
+
+#Configuring Reuse Recorded Resolution
+    git config --global rerere.enabled true
+
+#Configuring Git Aliases
+    git config --global alias.s "status -s"
+    git config --global alias.lg "log --oneline --decorate --all --graph"
+
+
+#Updating Your Fork
+    #add remote for upstream
+    git remote add upstream <path_to_repo>
+    #fetch changes
+    git fetch upstream
+    #merge them into master
+    git merge upstream/master master
+    #Push them to your remote
+    git push origin master
+
+    git remote add upstream https://github.com/deadlyvipers/dojo_rules.git
+    git pull upstream master

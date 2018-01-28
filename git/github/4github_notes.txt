@@ -1,0 +1,67 @@
+4 Issues
+
+4.1 Github Issues
+
+#Issues can be used for:
+    #Tracking Bugs
+    #Managing Features
+
+#Enabling Issues for Project
+    #Setting/Options => Checkboxes
+        #Wikis
+        #Restrict Editing
+        #Issues
+
+#Creating Issues
+    #Go to repo
+        #Create issue (top-right corner)
+            #title
+            #description
+
+#Issue Notifications
+    #Assign Issues to collaborators
+        #Can unsubscribe from issue
+        #Can subscribe to any issue
+
+#Referencing Issues in commit messages
+    #Include "fixes", "closes", or "resolves" and follow it with a pound sign and the number of the issue
+        #When this merged into default branch (generally master) it will close the issue automatically
+    
+Go to your "dojo_rules" repository and you'll notice that we've created an issue for you. Create a local feature branch named "kill_list".
+Make the fix to our issue on this branch and be sure to include "fixes #" in your commit message, using the issue number from GitHub.
+Push it up to GitHub on a branch of the same name.
+    git checkout -b kill_list
+    vim kill_list.md
+    git add .
+    git commit -m "Adding another programmer grievance. Fixes #3"
+    git push origin kill_list
+
+Create a pull request from your new "kill_list" branch back to "master".
+    base: tamckenna/dojo_rules-master   Compared: tamckenna/dojo_rules-kill_list
+
+4.3 Wikis
+    #README.md  - Simple introduction
+    #Github Wiki
+
+
+4.4 GitHub Pages
+
+#Creating Your User Page
+    #Create a repo called username.github.io
+    #Use the auto page generator
+    #Write Content
+    #Pick Theme
+    #Publish
+
+    #Repo Name:  tamckenna.github.io
+        #Settings>Github Pages> Automatic Page Generator
+
+    #For project Based Github Pages
+        username.github.io/repo-name
+
+Configuring a custome domain
+    #Create CNAME file in root of repo
+        #Add New File => CNAME
+        #Put domain name in first line
+    #Save Changes
+    #Configure dns host with new cname (alias)  pointed to tamckenna.github.io

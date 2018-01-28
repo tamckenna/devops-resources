@@ -1,0 +1,30 @@
+Branching and Tags
+
+git checkout -b shopping_cart
+git push origin shopping_cart
+
+git branch #list all local branches
+git branch -r #list all remote branches
+
+git checkout shopping_cart
+
+git remote show origin
+
+#removing remote branch
+git push origin :shopping_cart
+
+git branch -d shopping_cart
+    #get warning bc changes that haven't been committed are in this branch
+git branch -D shopping_cart #force deletion of local branch shopping_cart
+
+
+#remove old remote branches
+git remote prune origin
+
+Tagging
+    A tag is a reference to a commit (used mostly for release versioning)
+
+git tag     #list all tags
+git checkout v0.0.1     #check out code at commit
+git tag -a v0.0.3 -m "version 0.0.3"    #add a new tag
+git push --tags     #push new tags
