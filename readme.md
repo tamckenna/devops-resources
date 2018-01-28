@@ -1,7 +1,8 @@
 ## DevOps Resources & Notes
 
 ### Tools/Utilities
-  * [VS Code](https://code.visualstudio.com/) - _Text Editor_
+  * [VS Code](https://code.visualstudio.com/) - _Cross-Platform Text Editor_
+  * [Notepad++](https://notepad-plus-plus.org/download/) - _Windows-Only Text Editor_
   * [Sql Ops Studio](https://docs.microsoft.com/en-us/sql/sql-operations-studio/download) ([github](https://github.com/Microsoft/sqlopsstudio)) - _SQL Editor_
   * [Visual Studio](https://www.visualstudio.com/) - _.NET IDE_
   * [IntelliJ IDEA](https://www.jetbrains.com/idea/download/) - _Java IDE_
