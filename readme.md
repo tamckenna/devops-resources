@@ -6,6 +6,9 @@
   * [Visual Studio](https://www.visualstudio.com/) - _.NET IDE_
   * [IntelliJ IDEA](https://www.jetbrains.com/idea/download/) - _Java IDE_
   * [Eclipse](https://www.eclipse.org/downloads/) - _Open Source IDE_
+  * [Sql Developer](http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html) - _Oracle SQL IDE_
+  * [SSMS](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms) - _MS SQL IDE_
+  * [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) - _MySQL IDE_
   * [Postman](https://www.getpostman.com/) - _API testing tool_
   * [Docker](https://store.docker.com/search?offering=community&q=&type=edition) and [Docker-Compose](https://docs.docker.com/compose/install/) - _Container Platform_
   * **CLI**
