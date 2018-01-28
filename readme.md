@@ -5,7 +5,7 @@
   * [Sql Ops Studio](https://docs.microsoft.com/en-us/sql/sql-operations-studio/download)
     * [Github Page](https://github.com/Microsoft/sqlopsstudio)
 
-### General
+### Notes
 * [Git Notes](git)
 
 ### Infrastructure as Code (IAC)
