@@ -1,7 +1,7 @@
 ## DevOps Resources
 
 ### General
-
+- [Git Notes](git)
 
 ### Infrastructure as Code (IAC)
 
