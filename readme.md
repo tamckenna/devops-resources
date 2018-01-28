@@ -10,6 +10,9 @@
   * [SSMS](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms) - _MS SQL IDE_
   * [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) - _MySQL IDE_
   * [Postman](https://www.getpostman.com/) - _API testing tool_
+  * [.NET Core](https://www.microsoft.com/net/learn/get-started) - _Cross-Platform .NET framework_
+  * [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) - _Java Development Kit_
+  * [NodeJS](https://nodejs.org/en/) - _Javascript Runtime Environment_
   * [Docker](https://store.docker.com/search?offering=community&q=&type=edition) and [Docker-Compose](https://docs.docker.com/compose/install/) - _Container Platform_
   * **CLI**
     * [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)
