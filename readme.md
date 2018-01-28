@@ -3,6 +3,9 @@
 ### Tools/Utilities
   * [VS Code](https://code.visualstudio.com/) - _Text Editor_
   * [Sql Ops Studio](https://docs.microsoft.com/en-us/sql/sql-operations-studio/download)/[github repo](https://github.com/Microsoft/sqlopsstudio) - _SQL Editor_
+  * [Visual Studio](https://www.visualstudio.com/) - _.NET IDE_
+  * [IntelliJ IDEA](https://www.jetbrains.com/idea/download/) - _Java IDE_
+  * [Eclipse](https://www.eclipse.org/downloads/) - _Open Source IDE_
   * [Postman](https://www.getpostman.com/) - _API testing tool_
   * [Docker](https://store.docker.com/search?offering=community&q=&type=edition) and [Docker-Compose](https://docs.docker.com/compose/install/) - _Container Platform_
   * **CLI**
