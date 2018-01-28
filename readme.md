@@ -1,5 +1,17 @@
 ## DevOps Resources & Notes
 
+### Notes
+ * [Git](git)
+
+### Infrastructure as Code (IAC)
+ * [IaC Tutorials](https://github.com/Artemmkin/infrastructure-as-code-tutorial) by [Artemmkin](https://github.com/Artemmkin)
+  * [Examples](https://github.com/Artemmkin/infrastructure-as-code-example)
+  
+### Training Sites
+ * [Cloud Academy](https://cloudacademy.com/)
+ * [acloud.guru](https://acloud.guru/)
+ * [Udemy](https://www.udemy.com/)
+
 ### Tools/Utilities
   * [VS Code](https://code.visualstudio.com/) - _Cross-Platform Text Editor_
   * [Notepad++](https://notepad-plus-plus.org/download/) - _Windows-Only Text Editor_
@@ -21,19 +33,4 @@
     * [GCP SDK](https://cloud.google.com/sdk/)
     * [Homebrew](https://brew.sh/) - _MacOS package manager_
     * [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) - _Kubernetes CLI_
-  
-
-### My Notes
- * [Git](git)
-
-### Training Sites
- * [Cloud Academy](https://cloudacademy.com/)
- * [acloud.guru](https://acloud.guru/)
- * [Udemy](https://www.udemy.com/)
-
-### Infrastructure as Code (IAC)
-
-* [IaC Tutorials](https://github.com/Artemmkin/infrastructure-as-code-tutorial) by [Artemmkin](https://github.com/Artemmkin)
-  * [IaC Examples](https://github.com/Artemmkin/infrastructure-as-code-example)
-
 
