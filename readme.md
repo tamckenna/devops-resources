@@ -1,21 +1,19 @@
-## DevOps Resources & Notes
+# DevOps Resources & Notes
 
-### Notes
+## Notes
 * [Git](git) - _Basic git training notes_
 * [Selfhosted List](https://github.com/Kickball/awesome-selfhosted) - _List of Free & Open Software alternatives_
  
+## Training & Tutorials
+#### Infrastructure as Code (IAC)
+* [IaC Tutorials](https://github.com/Artemmkin/infrastructure-as-code-tutorial) & [Examples](https://github.com/Artemmkin/infrastructure-as-code-example) by [Artemmkin](https://github.com/Artemmkin)
 
-### Infrastructure as Code (IAC)
-* [IaC Tutorials](https://github.com/Artemmkin/infrastructure-as-code-tutorial) by [Artemmkin](https://github.com/Artemmkin)
- * [Examples](https://github.com/Artemmkin/infrastructure-as-code-example)
-  
-### Training Sites
+#### Training Sites
 * [Cloud Academy](https://cloudacademy.com/)
 * [acloud.guru](https://acloud.guru/)
 * [Udemy](https://www.udemy.com/)
 
-### Tools/Utilities
-
+## Tools/Utilities
 #### Editors/IDEs
 * [VS Code](https://code.visualstudio.com/) - _Cross-Platform Text Editor_
 * [Notepad++](https://notepad-plus-plus.org/download/) - _Windows-Only Text Editor_
@@ -26,10 +24,10 @@
 * [Sql Developer](http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html) - _Oracle SQL IDE_
 * [SSMS](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms) - _MS SQL IDE_
 * [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) - _MySQL IDE_
-  
+
 #### DEV Tools
 * [Postman](https://www.getpostman.com/) - _API testing tool_
-  
+
 #### DEV Frameworks/Runtimes
 * [.NET Core](https://www.microsoft.com/net/learn/get-started) - _Cross-Platform .NET framework_
 * [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) - _Java Development Kit_
@@ -42,4 +40,3 @@
 * [GCP SDK](https://cloud.google.com/sdk/)
 * [Homebrew](https://brew.sh/) - _MacOS package manager_
 * [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) - _Kubernetes CLI_
-
