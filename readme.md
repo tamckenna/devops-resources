@@ -3,6 +3,7 @@
 ## Notes
 * [Git](git) - _Basic git training notes_
 * [Selfhosted List](https://github.com/Kickball/awesome-selfhosted) - _List of Free & Open Software alternatives_
+* [.gitignore Templates](https://github.com/github/gitignore)
  
 ## Training & Tutorials
 #### Infrastructure as Code (IAC)
