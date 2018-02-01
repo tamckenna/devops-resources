@@ -7,6 +7,7 @@
 ## Training & Tutorials
 #### Infrastructure as Code (IAC)
 * [IaC Tutorials](https://github.com/Artemmkin/infrastructure-as-code-tutorial) & [Examples](https://github.com/Artemmkin/infrastructure-as-code-example) by [Artemmkin](https://github.com/Artemmkin)
+* [Kubernetes the hard way](https://github.com/kelseyhightower/kubernetes-the-hard-way) by [kelseyhightower](https://github.com/kelseyhightower)
 
 #### Training Sites
 * [Cloud Academy](https://cloudacademy.com/)
