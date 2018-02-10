@@ -3,6 +3,7 @@
 ## Notes
 * [Git](git) - _Basic git training notes_
 * [Selfhosted List](https://github.com/Kickball/awesome-selfhosted) - _List of Free & Open Software alternatives_
+* [SysAdmin Collection](https://github.com/n1trux/awesome-sysadmin) - _List of great SysAdmin Tools_
 * [.NET Core Collection](https://github.com/thangchung/awesome-dotnet-core) - _Collection of dotnet core tools, frameworks, & software_
 * [.gitignore Templates](https://github.com/github/gitignore)
  
