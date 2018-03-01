@@ -6,11 +6,17 @@ exports.handler = (event, context, callback) => {
     
     //Implement Code Here
     
-    var outputValue = "OUTPUT_VALUE_HERE";
+    var policyNumber = "";
+    var effectiveDate = "";
+    var premiumAmount = 0;
     
     /////////////////////////////////////
     //DON"T CHANGE ANYTHING BELOW HERE!!!
     /////////////////////////////////////
-    const response = { statusCode: 200, body: JSON.stringify({ output: outputValue, }) };
+    const response = { statusCode: 200, body: JSON.stringify({
+        policynumber: policyNumber,
+        effectivedate: effectiveDate,
+        premiumamount: premiumAmount,
+    }) };
     callback(null, response);
 };
