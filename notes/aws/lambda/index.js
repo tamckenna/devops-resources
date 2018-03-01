@@ -20,9 +20,9 @@ exports.handler = (event, context, callback) => {
     //Implement Code Here
     
     //Output Variables
-    var responsePolicyNumber = "";
-    var responseEffectiveDate = "";
-    var responsePremiumAmount = "";
+    var responsePolicyNumber = "POLICY_HERE";
+    var responseEffectiveDate = "EFFECTIVE_DATE_HERE";
+    var responsePremiumAmount = "PREMIUM_AMOUNT_HERE";
     
     /////////////////////////////////////
     //DON"T CHANGE ANYTHING BELOW HERE!!!
