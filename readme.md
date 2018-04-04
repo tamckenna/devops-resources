@@ -6,6 +6,7 @@
 * [SysAdmin Collection](https://github.com/n1trux/awesome-sysadmin) - _List of great SysAdmin Tools_
 * [.NET Core Collection](https://github.com/thangchung/awesome-dotnet-core) - _Collection of dotnet core tools, frameworks, & software_
 * [.gitignore Templates](https://github.com/github/gitignore)
+* [Dev Tools by Scott Hanselman](http://www.hanselman.com/blog/ScottHanselmans2014UltimateDeveloperAndPowerUsersToolListForWindows.aspx)
  
 ## Training & Tutorials
 #### Infrastructure as Code (IAC)
