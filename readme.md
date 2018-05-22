@@ -45,4 +45,5 @@
 * [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 * [GCP SDK](https://cloud.google.com/sdk/)
 * [Homebrew](https://brew.sh/) - _MacOS package manager_
+* [Chocolatey](https://chocolatey.org/) - _Windows package manager_
 * [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) - _Kubernetes CLI_
