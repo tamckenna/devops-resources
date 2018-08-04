@@ -13,6 +13,12 @@
 * [IaC Tutorials](https://github.com/Artemmkin/infrastructure-as-code-tutorial) & [Examples](https://github.com/Artemmkin/infrastructure-as-code-example) by [Artemmkin](https://github.com/Artemmkin)
 * [Kubernetes the hard way](https://github.com/kelseyhightower/kubernetes-the-hard-way) by [kelseyhightower](https://github.com/kelseyhightower)
 
+#### Serverless
+* [Serverless Framework](https://serverless.com/) ([GitHub](https://github.com/serverless/serverless))
+* [AWS SAM](https://github.com/awslabs/aws-sam-cli)
+* [Azure Functions](https://github.com/Azure/Azure-Functions)
+* [Apache OpenWhisk](https://openwhisk.apache.org/)
+
 #### Training Sites
 * [Cloud Academy](https://cloudacademy.com/)
 * [acloud.guru](https://acloud.guru/)
